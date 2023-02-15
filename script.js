@@ -319,39 +319,3 @@ window.onload = function () {
     document.getElementById("pumpimg3").style.display = "none";
   };
 };
-
-// preload
-
-function preload() {
-  var preload_list = [];
-  var images = [];
-
-  $("#i a").each(function (i) {
-    let e = $(this);
-
-    if (
-      e.attr("data-url") !== "undefined" &&
-      e.attr("data-url") !== undefined
-    ) {
-      preload_list.push("./assets/" + e.attr("data-url"));
-    }
-  });
-
-  $("#i .box").each(function (i) {
-    let e = $(this);
-
-    if (
-      e.attr("data-url") !== "undefined" &&
-      e.attr("data-url") !== undefined
-    ) {
-      preload_list.push("./assets/" + e.attr("data-url"));
-    }
-  });
-
-  for (let i = 0; i < 10; i++) {
-    images[i] = new Image();
-    images[i].src = preload_list[i];
-  }
-}
-
-preload();
