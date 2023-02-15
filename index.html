@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="style/main.css" />
   <script src="script.js" defer></script>
   <meta name="author" content="Zhiying Deng">
+
+  <mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+<context:component-scan base-package="com.th.action"></context:component-scan>
+<mvc:default-servlet-handler/>
 </head>
 
 <body>
