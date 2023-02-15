@@ -1,0 +1,200 @@
+
+.float {
+  position: absolute;
+  width: 100px;
+}
+
+/* 基本资料 */
+@keyframes example {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  50.1% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* box */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+#i {
+  margin-top: 50px;
+  padding: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  font-size: 0.75em;
+  counter-reset: boxes;
+  flex-direction: row;
+}
+
+
+#i a,
+#i .box {
+  display: inline-block;
+}
+#i .box{
+  position: relative !important;
+}
+
+/* 最小 */
+@media only screen and (max-width: 600px) {
+
+  #i a,
+  #i .box {
+    width: 50%;
+    min-height: 100px;
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  #i a,
+  #i .box {
+    width: 30%;
+    min-height: 100px;
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  #i a,
+  #i .box {
+    width: 23%;
+  }
+}
+
+/* 最大 */
+@media only screen and (min-width: 1400px) {
+
+  #i a,
+  #i .box {
+    width: 16.5%;
+    
+  }
+}
+
+#i a .box {
+  width: 100%;
+  min-height: 145px;
+
+}
+
+.box {
+  overflow: hidden;
+  margin-bottom: 2em;
+
+}
+
+@media only screen and (max-width: 768px) {
+  #i .box h1 {
+    width: 69%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #i .box p:first-of-type{
+    font-size: 0.8em;
+    width: 92%;
+    height:4vh;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  #i .box p:first-of-type{
+    font-size: 0.8em;
+    width: 95%;
+    height:auto;
+  }
+}
+
+
+#twothree,
+#twotwo,
+#twoone {
+  font-size: 1rem;
+}
+
+/*box的箭头*/
+a[href*="http"]>.box {
+  cursor: ne-resize;
+}
+
+/*数盒子*/
+#i a:not([info]),
+#i .box[data-type] {
+  counter-increment: boxes;
+}
+
+h1 {
+  counter-increment: myCounter;
+  font-weight: lighter;
+  font-size: 1rem
+    /* 16/16 */;
+
+}
+
+a:not([info]) .box::after,
+  .box[data-type]::after  {
+  content: " [ " counter(boxes) " ] ";
+  font-size: 0.6em;
+  position:absolute;
+  padding: 0.7em 0;
+  top:0;
+  right:15px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .55rem;
+}
+
+p:first-of-type {
+  width: auto;
+  overflow: hidden;
+  margin-top:10px;
+}
+
+p:nth-last-of-type(2){
+  margin-top: 1.5em;
+
+}
+
+
+.hoverimg {
+  position: fixed;
+  display: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#dump {
+  max-width: 78%;
+  max-height: 95%;
+  object-fit: contain;
+}

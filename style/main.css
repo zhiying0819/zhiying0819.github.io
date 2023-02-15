@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "CrimsonPro-ExtraLight";
+  src: url("assets/CrimsonPro-ExtraLight.woff2") format("woff2"), url("assets/CrimsonPro-ExtraLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Light";
+  src: url("assets/CrimsonPro-Light.woff2") format("woff2"), url("assets/CrimsonPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1em;
+    font-family: "CrimsonPro-Light";
+    color: rgb(48, 48, 48);
+    text-indent: 0;
+    line-height: 1.2;
+    -webkit-tap-highlight-color: transparent;
+  
+  }
+  
+  html,
+  body {
+    overscroll-behavior-x: none;
+  }
+  
+  body {
+    margin: 8px;
+    background-color: rgb(255, 250, 251);
+    position: relative;
+    display: block;
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* header */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1.5em;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact,
+  .about {
+    text-indent: -0.4rem;
+    width: 49%;
+  }
+  
+  
+  /* footer */
+  footer {
+    position: fixed;
+    width: 100%;
+    padding: 1.5em;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .copyright {
+    font-size: .625rem
+      /* 10/16 */
+    ;
+    color: rgb(128, 128, 128);
+    text-align: right;
+    width: 100%;
+  }
+  
+  ul {
+    list-style-type: none;
+    color: rgb(59, 59, 59);
+    width: 100%;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    text-decoration: none;
+    margin-right: 14.7%;
+    transition: all 0.1s linear 0s;
+  }
+  
+  li a:hover {
+    color: violet;
+  }
+  
