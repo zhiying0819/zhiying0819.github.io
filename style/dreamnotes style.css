@@ -87,7 +87,6 @@ footer {
 .box {
     position: relative;
     float: left;
-    width: 22%;
     min-width: auto;
     height: auto;
     min-height: auto;
@@ -112,7 +111,7 @@ p:before {
 
 
 /* 最小 */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) {
 
   
   #i .box {
@@ -122,11 +121,20 @@ p:before {
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 800px) {
 
   
   #i .box {
-    width: 45%;
+    width: 40%;
+    height: auto;
+  }
+
+}
+@media only screen and (min-width: 1000px) {
+
+  
+  #i .box {
+    width: 33%;
     height: auto;
   }
 
