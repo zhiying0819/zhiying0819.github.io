@@ -143,7 +143,7 @@ document.getElementById("texts").onmouseover = function () {
   document.getElementById("textsp").style.height = "auto";
   document.getElementById("textsp").style.top = "50%";
   document.getElementById("textsp").style.left = "50%";
-  document.getElementById("textsp").src = "assets/2022/Textsor/video.mov";
+  document.getElementById("textsp").src = "assets/2022/Textsor/video.mp4";
 };
 document.getElementById("texts").onmouseout = function () {
   document.getElementById("texts").style.zIndex = "auto";
