@@ -1,3 +1,5 @@
+// float
+
 //获取图片的对象
 var img = document.getElementById("floaticon");
 
@@ -47,7 +49,11 @@ function floatimg() {
 }
 floatimg();
 
+
+
+
 // hover出现图片
+
 window.onload = function () {
   //zywebsite
   document.getElementById("zyweb").onmouseover = function () {
