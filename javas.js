@@ -1,3 +1,5 @@
+//# sourceURL=javas.js
+
 // float
 
 //获取图片的对象
