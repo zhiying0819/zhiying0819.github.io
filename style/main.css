@@ -46,8 +46,7 @@
   }
 
   /* header */
-.header {
-    position: relative;
+header {
     top: 0;
     left: 0;
     padding: 1.5em;
@@ -67,11 +66,14 @@
   /* footer */
   footer {
     position: fixed;
+    left:0;
     width: 100%;
     padding: 1.5em;
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9178824972) 28%, rgba(255, 255, 255, 0) 100%);
   }
   
   .copyright {
