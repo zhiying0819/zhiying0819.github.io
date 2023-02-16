@@ -59,6 +59,8 @@ footer {
     height: 3.7481vh;
     padding: 1.5em;
     bottom: 15px;
+    align-items: baseline;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9178824972) 28%, rgba(255, 255, 255, 0) 100%);
   }
 
   ul {
