@@ -4,10 +4,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-
 
 @font-face {
   font-family: "CrimsonPro-Light";
@@ -15,10 +12,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-
 }
-
 
 * {
     padding: 0;
@@ -62,7 +56,6 @@ header {
     width: 49%;
   }
   
-  
   /* footer */
   footer {
     position: fixed;
@@ -84,24 +77,85 @@ header {
     text-align: right;
     width: 100%;
   }
-  
-  ul {
-    list-style-type: none;
-    color: rgb(59, 59, 59);
-    width: 100%;
+
+#mobilephoto{
+  display: none;
+}
+
+  /* 自适应 */
+/* 最小 */
+@media only screen and (max-width: 600px) {
+
+  #i a,
+  #i .box {
+    width: 90%;
+    min-height: 110px;
+    height: auto;
   }
   
-  li {
-    display: inline;
+}
+
+@media only screen and (min-width: 600px) {
+
+  #i a,
+  #i .box {
+    width: 50%;
+    min-height: 110px;
+    height: auto;
   }
-  
-  li a {
-    text-decoration: none;
-    margin-right: 14.7%;
-    transition: all 0.1s linear 0s;
+
+}
+
+@media only screen and (min-width: 700px) {
+
+  #i a,
+  #i .box {
+    width: 30%;
+    min-height: 100px;
+    height: auto;
   }
-  
-  li a:hover {
-    color: violet;
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  #i a,
+  #i .box {
+    width: 23%;
   }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+  #i a,
+  #i .box {
+    width: 16.5%;
+    
+  }
+}
+
+/* box details */
+@media only screen and (max-width: 768px) {
+  #i .box h1 {
+    width: 69%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #i .box p:first-of-type{
+    font-size: 0.8em;
+    width: 92%;
+    height:4vh;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  #i .box p:first-of-type{
+    font-size: 0.8em;
+    width: 95%;
+    height:auto;
+  }
+}
+
   
