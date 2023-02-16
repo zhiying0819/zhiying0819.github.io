@@ -29,14 +29,7 @@ a {
 }
 
 
-
 /* box */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-}
 
 #i {
   margin-top: 50px;
@@ -50,15 +43,26 @@ main {
   flex-direction: row;
 }
 
-
-#i a,
+/* #i a,
 #i .box {
   display: inline-block;
-}
-#i .box{
-  position: relative !important;
-}
+} */
 
+
+#i a .box {
+  width: 100%;
+  min-height: 145px;
+  margin-bottom: 2em;
+
+}
+/* .box {
+  margin-bottom: 2em;
+} */
+
+
+
+
+/* 自适应 */
 /* 最小 */
 @media only screen and (max-width: 600px) {
 
@@ -66,7 +70,7 @@ main {
   #i .box {
     width: 50%;
     min-height: 100px;
-    height: auto;
+    height: 190px;
   }
 
 }
@@ -100,17 +104,6 @@ main {
   }
 }
 
-#i a .box {
-  width: 100%;
-  min-height: 145px;
-
-}
-
-.box {
-  overflow: hidden;
-  margin-bottom: 2em;
-
-}
 
 @media only screen and (max-width: 768px) {
   #i .box h1 {
@@ -134,12 +127,6 @@ main {
 }
 
 
-#twothree,
-#twotwo,
-#twoone {
-  font-size: 1rem;
-}
-
 /*box的箭头*/
 a[href*="http"]>.box {
   cursor: ne-resize;
@@ -161,14 +148,15 @@ h1 {
 
 a:not([info]) .box::after,
   .box[data-type]::after  {
-  content: " [ " counter(boxes) " ] ";
-  font-size: 0.6em;
+  content: " ＞＞ [ " counter(boxes) " ] ";
+  font-size: 0.8em;
   position:absolute;
   padding: 0.7em 0;
   top:0;
   right:15px;
 }
 
+/* box里的内容 */
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: .55rem;
