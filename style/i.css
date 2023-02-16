@@ -68,14 +68,25 @@ a {
 
   #i a,
   #i .box {
-    width: 50%;
+    width: 90%;
     min-height: 100px;
     height: 190px;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+
+  #i a,
+  #i .box {
+    width: 50%;
+    min-height: 100px;
+    height: auto;
   }
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 
   #i a,
   #i .box {
@@ -94,7 +105,6 @@ a {
   }
 }
 
-/* 最大 */
 @media only screen and (min-width: 1400px) {
 
   #i a,
@@ -104,7 +114,7 @@ a {
   }
 }
 
-
+/* box details */
 @media only screen and (max-width: 768px) {
   #i .box h1 {
     width: 69%;
@@ -128,13 +138,14 @@ a {
 
 
 /*box的箭头*/
-a[href*="http"]>.box {
+a[href*="http"] {
   cursor: ne-resize;
 }
 
 /*数盒子*/
-#i a:not([info]),
-#i .box[data-type] {
+#i a,
+.box[data-type]
+ {
   counter-increment: boxes;
 }
 
@@ -146,12 +157,12 @@ h1 {
 
 }
 
-a:not([info]) .box::after,
+a::after,
   .box[data-type]::after  {
-  content: " ＞＞ [ " counter(boxes) " ] ";
+  content: " [ " counter(boxes) " ] ";
   font-size: 0.8em;
   position:absolute;
-  padding: 0.7em 0;
+  padding: 0.4em 0;
   top:0;
   right:15px;
 }
@@ -182,7 +193,7 @@ p:nth-last-of-type(2){
 }
 
 #dump {
-  max-width: 78%;
-  max-height: 95%;
+  max-width: 70%;
+  max-height: 90%;
   object-fit: contain;
 }
