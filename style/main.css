@@ -30,6 +30,7 @@
   html,
   body {
     overscroll-behavior-x: none;
+    scroll-behavior: smooth; 
   }
   
   body {
@@ -69,6 +70,13 @@ header {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.9178824972) 28%, rgba(255, 255, 255, 0) 100%);
   }
   
+    #selectyear {
+      display: none;
+      border-radius: 0;
+      border-style: none;
+      background-color: field;
+  
+    }
   .copyright {
     font-size: .625rem
       /* 10/16 */
@@ -78,9 +86,6 @@ header {
     width: 100%;
   }
 
-#mobilephoto{
-  display: none;
-}
 
   /* 自适应 */
 /* 最小 */
@@ -89,8 +94,7 @@ header {
   #i a,
   #i .box {
     width: 90%;
-    min-height: 110px;
-    height: auto;
+    min-height: auto !important;
   }
   
 }
@@ -113,6 +117,8 @@ header {
     width: 30%;
     min-height: 100px;
     height: auto;
+    object-fit: contain;
+
   }
 
 }
@@ -143,19 +149,27 @@ header {
   }
 }
 
-@media only screen and (max-width: 1400px) {
-  #i .box p:first-of-type{
-    font-size: 0.8em;
-    width: 92%;
-    height:4vh;
-  }
-}
 @media only screen and (max-width: 2000px) {
   #i .box p:first-of-type{
     font-size: 0.8em;
-    width: 95%;
+    width: 86%;
     height:auto;
   }
 }
 
-  
+/* imagedetails */
+
+@media only screen and (max-width: 1030px) {
+  #photohide{
+    display: none !important;
+  }
+}
+
+#mobilephoto{
+  display: none;
+}
+@media only screen and (max-width: 1030px) {
+  #selectyear, #mobilephoto{
+    display: block !important;
+  }
+}

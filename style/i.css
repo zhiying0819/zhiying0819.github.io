@@ -97,7 +97,6 @@ p {
 }
 
 p:first-of-type {
-  width: auto;
   overflow: hidden;
   margin-top:10px;
 }
@@ -116,7 +115,7 @@ p:nth-last-of-type(2){
 }
 
 #dump {
-  max-width: 70%;
-  max-height: 90%;
+  max-width: 80%;
+  max-height: auto;
   object-fit: contain;
 }
