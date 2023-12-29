@@ -57,6 +57,21 @@ floatimg();
 // hover出现图片
 
 window.onload = function () {
+  //creativecomputational
+  document.getElementById("cCom").onmouseover = function () {
+    document.getElementById("cCom").style.zIndex = "9999";
+    document.getElementById("creative").style.display = "block";
+    document.getElementById("creative").style.width = "50vw";
+    document.getElementById("creative").style.height = "auto";
+    document.getElementById("creative").style.top = "50%";
+    document.getElementById("creative").style.left = "50%";
+    document.getElementById("creative").src = "assets/2023/creative.mp4";
+  };
+  document.getElementById("cCom").onmouseout = function () {
+    document.getElementById("cCom").style.zIndex = "auto";
+    document.getElementById("creative").style.display = "none";
+  };
+
   //zywebsite
   document.getElementById("zyweb").onmouseover = function () {
     document.getElementById("zyweb").style.zIndex = "9999";
