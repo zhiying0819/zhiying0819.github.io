@@ -53,8 +53,12 @@ header {
   
    .contact,
   .about { 
-    /* text-indent: -0.5rem; */
+    /* text-indent: 0.3rem; */
     width: 50%;
+  }
+  .about{
+    text-indent: 0.1rem;
+
   }
 
   
