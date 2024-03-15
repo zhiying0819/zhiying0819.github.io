@@ -35,7 +35,7 @@
   
   body {
     margin: 8px;
-    background-color: rgb(255, 250, 251);
+    background-color: white;
     text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   }
@@ -49,13 +49,14 @@ header {
     text-align: left;
     display: flex;
     justify-content: space-between;
-  }
+  } 
   
-  .contact,
-  .about {
-    text-indent: -0.4rem;
-    width: 49%;
+   .contact,
+  .about { 
+    /* text-indent: -0.5rem; */
+    width: 50%;
   }
+
   
   /* footer */
   footer {
@@ -93,7 +94,7 @@ header {
 
   #i a,
   #i .box {
-    width: 90%;
+    width: 100%;
     min-height: auto !important;
   }
   
@@ -114,7 +115,7 @@ header {
 
   #i a,
   #i .box {
-    width: 30%;
+    width: 33.3%;
     min-height: 100px;
     height: auto;
     object-fit: contain;
@@ -127,7 +128,7 @@ header {
 
   #i a,
   #i .box {
-    width: 23%;
+    width: 25%;
   }
 
 }
@@ -137,8 +138,8 @@ header {
 
   #i a,
   #i .box {
-    width: 16.5%;
-    
+    width: 16.6%;
+    height: 200px;
   }
 }
 

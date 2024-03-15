@@ -52,6 +52,14 @@ function floatimg() {
 floatimg();
 
 
+function togglePanel(panelId) {
+  var x = document.getElementById(panelId);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 
 // hover出现图片
@@ -204,43 +212,43 @@ window.onload = function () {
   };
 
   // i think who i am
-  document.getElementById("ii").onmouseover = function () {
-    document.getElementById("ii").style.zIndex = "9999";
-    document.getElementById("ip").style.display = "block";
-    document.getElementById("ip").style.width = "50vw";
-    document.getElementById("ip").style.height = "auto";
-    document.getElementById("ip").style.top = "50%";
-    document.getElementById("ip").style.left = "40%";
-    document.getElementById("ip").src = "assets/2021/I/0.jpg";
+  // document.getElementById("ii").onmouseover = function () {
+  //   document.getElementById("ii").style.zIndex = "9999";
+  //   document.getElementById("ip").style.display = "block";
+  //   document.getElementById("ip").style.width = "50vw";
+  //   document.getElementById("ip").style.height = "auto";
+  //   document.getElementById("ip").style.top = "50%";
+  //   document.getElementById("ip").style.left = "40%";
+  //   document.getElementById("ip").src = "assets/2021/I/0.jpg";
 
-    document.getElementById("ip2").style.display = "block";
-    document.getElementById("ip2").style.width = "20vw";
-    document.getElementById("ip2").style.height = "auto";
-    document.getElementById("ip2").style.top = "70%";
-    document.getElementById("ip2").style.left = "70%";
-    document.getElementById("ip2").src = "assets/2021/I/1.jpg";
+  //   document.getElementById("ip2").style.display = "block";
+  //   document.getElementById("ip2").style.width = "20vw";
+  //   document.getElementById("ip2").style.height = "auto";
+  //   document.getElementById("ip2").style.top = "70%";
+  //   document.getElementById("ip2").style.left = "70%";
+  //   document.getElementById("ip2").src = "assets/2021/I/1.jpg";
 
-    document.getElementById("ip3").style.display = "block";
-    document.getElementById("ip3").style.width = "20vw";
-    document.getElementById("ip3").style.height = "auto";
-    document.getElementById("ip3").style.top = "20%";
-    document.getElementById("ip3").style.left = "10%";
-    document.getElementById("ip3").src = "assets/2021/I/3.jpg";
+  //   document.getElementById("ip3").style.display = "block";
+  //   document.getElementById("ip3").style.width = "20vw";
+  //   document.getElementById("ip3").style.height = "auto";
+  //   document.getElementById("ip3").style.top = "20%";
+  //   document.getElementById("ip3").style.left = "10%";
+  //   document.getElementById("ip3").src = "assets/2021/I/3.jpg";
 
-    document.getElementById("ip4").style.display = "block";
-    document.getElementById("ip4").style.width = "15vw";
-    document.getElementById("ip4").style.height = "auto";
-    document.getElementById("ip4").style.top = "15%";
-    document.getElementById("ip4").style.left = "85%";
-    document.getElementById("ip4").src = "assets/2021/I/5.jpg";
-  };
-  document.getElementById("ii").onmouseout = function () {
-    document.getElementById("ii").style.zIndex = "auto";
-    document.getElementById("ip").style.display = "none";
-    document.getElementById("ip2").style.display = "none";
-    document.getElementById("ip3").style.display = "none";
-    document.getElementById("ip4").style.display = "none";
-  };
+  //   document.getElementById("ip4").style.display = "block";
+  //   document.getElementById("ip4").style.width = "15vw";
+  //   document.getElementById("ip4").style.height = "auto";
+  //   document.getElementById("ip4").style.top = "15%";
+  //   document.getElementById("ip4").style.left = "85%";
+  //   document.getElementById("ip4").src = "assets/2021/I/5.jpg";
+  // };
+  // document.getElementById("ii").onmouseout = function () {
+  //   document.getElementById("ii").style.zIndex = "auto";
+  //   document.getElementById("ip").style.display = "none";
+  //   document.getElementById("ip2").style.display = "none";
+  //   document.getElementById("ip3").style.display = "none";
+  //   document.getElementById("ip4").style.display = "none";
+  // };
 
   // digital fold
   document.getElementById("d").onmouseover = function () {
@@ -281,20 +289,20 @@ window.onload = function () {
     document.getElementById("dg4").style.display = "none";
   };
 
-  // interview
-  document.getElementById("interview").onmouseover = function () {
-    document.getElementById("interview").style.zIndex = "9999";
-    document.getElementById("interviewv").style.display = "block";
-    document.getElementById("interviewv").style.width = "60vw";
-    document.getElementById("interviewv").style.height = "auto";
-    document.getElementById("interviewv").style.top = "50%";
-    document.getElementById("interviewv").style.left = "50%";
-    document.getElementById("interviewv").src = "assets/2021/interview/3.png";
-  };
-  document.getElementById("interview").onmouseout = function () {
-    document.getElementById("interview").style.zIndex = "auto";
-    document.getElementById("interviewv").style.display = "none";
-  };
+  // // interview
+  // document.getElementById("interview").onmouseover = function () {
+  //   document.getElementById("interview").style.zIndex = "9999";
+  //   document.getElementById("interviewv").style.display = "block";
+  //   document.getElementById("interviewv").style.width = "60vw";
+  //   document.getElementById("interviewv").style.height = "auto";
+  //   document.getElementById("interviewv").style.top = "50%";
+  //   document.getElementById("interviewv").style.left = "50%";
+  //   document.getElementById("interviewv").src = "assets/2021/interview/3.png";
+  // };
+  // document.getElementById("interview").onmouseout = function () {
+  //   document.getElementById("interview").style.zIndex = "auto";
+  //   document.getElementById("interviewv").style.display = "none";
+  // };
 
   //piano
   document.getElementById("piano").onmouseover = function () {

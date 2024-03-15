@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "CrimsonPro-ExtraLight";
+    src: url("../assets/fonts/CrimsonPro-ExtraLight.woff2") format("woff2"), url("../assets/fonts/CrimsonPro-ExtraLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "CrimsonPro-Light";
+    src: url("../assets/fonts/CrimsonPro-Light.woff2") format("woff2"), url("../assets/fonts/CrimsonPro-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      position: relative;
+      font-size: 1em;
+      font-family: "CrimsonPro-Light";
+      color: rgb(48, 48, 48);
+      text-indent: 0;
+      line-height: 1.2;
+    
+    }
+    
+    html,
+    body {
+      overscroll-behavior-x: none;
+      scroll-behavior: smooth; 
+    }
+    
+    body {
+      margin: 8px;
+      background-color: white;
+      text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    }
+
+      /* header */
+header {
+    top: 0;
+    left: 0;
+    padding: 1.5em;
+    width: 100%;
+    /* text-align: left;
+    display: flex;
+    justify-content: space-between; */
+  }
+  
+  .contact,
+  .about {
+    /* text-indent: -0.4rem; */
+    width: 50%;
+  }
+/* 
+  .exhiD{
+    margin-left: 2.9rem;
+    text-indent: -2.9rem;
+  } */
+  .time{
+        text-indent: 2.9rem;
+  }
+
+    /* 自适应 */
+/* 最小 */
+@media only screen and (max-width: 600px) {
+
+    .contact,
+  .about {
+      width: 100%;
+      min-height: auto !important;
+    }
+    
+  }

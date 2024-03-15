@@ -29,14 +29,17 @@ a {
 }
 
 
+
+
 /* box */
 
+
 #i {
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 1.5em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: auto;
   font-size: 0.75em;
   counter-reset: boxes;
@@ -118,4 +121,17 @@ p:nth-last-of-type(2){
   max-width: 80%;
   max-height: auto;
   object-fit: contain;
+}
+
+#photohide{
+  max-width: 40%;
+  max-height: auto;
+  object-fit: contain;
+  transition: all 0.2s linear;
+
+}
+
+#photohide:hover{
+  transform: scale(5);
+  transition: all 0.2s linear;
 }
