@@ -159,10 +159,36 @@ window.onload = function () {
     document.getElementById("unearthedp").style.left = "50%";
     document.getElementById("unearthedp").src =
       "assets/2022/unearthed/video.mp4";
+
+    document.getElementById("uef1").style.display = "block";
+    document.getElementById("uef1").style.width = "18vw";
+    document.getElementById("uef1").style.height = "auto";
+    document.getElementById("uef1").style.top = "30%";
+    document.getElementById("uef1").style.left = "85%";
+    document.getElementById("uef1").src = "assets/2022/unearthed/unearthedFontsExtend1.jpg";
+
+    document.getElementById("uef2").style.display = "block";
+    document.getElementById("uef2").style.width = "18vw";
+    document.getElementById("uef2").style.height = "auto";
+    document.getElementById("uef2").style.top = "75%";
+    document.getElementById("uef2").style.left = "15%";
+    document.getElementById("uef2").src = "assets/2022/unearthed/uneathedFontsExtend2.jpg";
+
+    document.getElementById("uef3").style.display = "block";
+    document.getElementById("uef3").style.width = "18vw";
+    document.getElementById("uef3").style.height = "auto";
+    document.getElementById("uef3").style.top = "10%";
+    document.getElementById("uef3").style.left = "35%";
+    document.getElementById("uef3").src = "assets/2022/unearthed/uneathedFontsExtend3.png";
   };
   document.getElementById("unearthed").onmouseout = function () {
     document.getElementById("unearthed").style.zIndex = "auto";
     document.getElementById("unearthedp").style.display = "none";
+
+    // document.getElementById("unearthed").style.zIndex = "auto";
+    document.getElementById("uef1").style.display = "none";
+    document.getElementById("uef2").style.display = "none";
+    document.getElementById("uef3").style.display = "none";
   };
 
   // texts
@@ -342,6 +368,7 @@ window.onload = function () {
     document.getElementById("pumpimg3").style.top = "25%";
     document.getElementById("pumpimg3").style.left = "75%";
     document.getElementById("pumpimg3").src = "assets/2021/pump/5.jpg";
+    
   };
   document.getElementById("pump").onmouseout = function () {
     document.getElementById("pump").style.zIndex = "auto";
