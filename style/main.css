@@ -113,19 +113,24 @@ header {
   display: block;
 }
 
+.underCon{
+  position: relative;
+  top: 0;
+  left: 5vw;
+  font-size: 4em;
+  background-color: white;
+  display: none;
+}
   /* 自适应 */
 /* 最小 */
 @media only screen and (max-width: 600px) {
 
-  #i a,
+  /* #i a,
   #i .box {
     width: 100%;
     min-height: auto !important;
   }
 
-  .introduction{
-    display: none;
-  }
 
   .projectFilter{
     flex-direction: column;
@@ -135,6 +140,21 @@ header {
   .filterName{
     margin-top: 0.5vh;
     width: auto;
+  } */
+   body{
+    overflow: hidden;
+   }
+   .projectFilter{
+    display: none;
+   }
+  .introduction{
+    display: none;
+  }
+main{
+  display: none;
+}
+  .underCon{
+    display: block;
   }
   
 }
