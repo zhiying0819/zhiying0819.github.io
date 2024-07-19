@@ -21,6 +21,7 @@
     position: relative;
     font-size: 1em;
     font-family: "CrimsonPro-Light";
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: rgb(48, 48, 48);
     text-indent: 0;
     line-height: 1.2;
@@ -82,15 +83,35 @@ header {
       background-color: field;
   
     }
-  .copyright {
-    font-size: .625rem
-      /* 10/16 */
-    ;
-    color: rgb(128, 128, 128);
-    text-align: right;
-    width: 100%;
-  }
+ .projectFilter{
+  position: fixed;
+  width: 100%;
+  bottom: 2em;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+ }
 
+ .filterName{
+  width:16.1%;
+  /* color: black; */
+  font-size: 0.7em;
+  
+ }
+
+ .filterName:hover{
+  color: violet;
+  font-style: italic;
+  cursor: pointer;
+ }
+
+ .projectbox .box {
+  display: none;
+}
+
+.projectbox .box.show {
+  display: block;
+}
 
   /* 自适应 */
 /* 最小 */
@@ -100,6 +121,20 @@ header {
   #i .box {
     width: 100%;
     min-height: auto !important;
+  }
+
+  .introduction{
+    display: none;
+  }
+
+  .projectFilter{
+    flex-direction: column;
+    font-size: 1.5em;
+    bottom: 1em;
+  }
+  .filterName{
+    margin-top: 0.5vh;
+    width: auto;
   }
   
 }

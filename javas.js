@@ -1,5 +1,8 @@
 //# sourceURL=javas.js
 
+// 默认显示所有项目
+filterProjects('all');
+
 // float
 
 //获取图片的对象
@@ -377,3 +380,32 @@ window.onload = function () {
     document.getElementById("pumpimg3").style.display = "none";
   };
 };
+
+
+//project filter
+
+    function togglePanel(panelId) {
+        const panel = document.getElementById(panelId);
+        if (panel.style.display === "none" || panel.style.display === "") {
+            panel.style.display = "block";
+        } else {
+            panel.style.display = "none";
+        }
+    }
+
+    function filterProjects(filter) {
+        const projects = document.querySelectorAll('.box');
+        projects.forEach(project => {
+            if (filter === 'all') {
+                project.classList.add('show');
+            } else {
+                if (project.classList.contains(filter)) {
+                    project.classList.add('show');
+                } else {
+                    project.classList.remove('show');
+                }
+            }
+        });
+    }
+
+
