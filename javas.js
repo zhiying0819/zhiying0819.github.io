@@ -68,6 +68,29 @@ function togglePanel(panelId) {
 // hover出现图片
 
 window.onload = function () {
+   //kauko
+   document.getElementById("kauko").onmouseover = function () {
+    document.getElementById("kauko").style.zIndex = "9999";
+    document.getElementById("kaukovideo").style.display = "block";
+    document.getElementById("kaukovideo").style.width = "30vw";
+    document.getElementById("kaukovideo").style.height = "auto";
+    document.getElementById("kaukovideo").style.top = "50%";
+    document.getElementById("kaukovideo").style.left = "70%";
+    document.getElementById("kaukovideo").src = "assets/2024/kauko/website.mp4";
+
+    document.getElementById("kaukovideo2").style.display = "block";
+    document.getElementById("kaukovideo2").style.width = "30vw";
+    document.getElementById("kaukovideo2").style.height = "auto";
+    document.getElementById("kaukovideo2").style.top = "50%";
+    document.getElementById("kaukovideo2").style.left = "30%";
+    document.getElementById("kaukovideo2").src = "assets/2024/kauko/mobile.mp4";
+  };
+  document.getElementById("kauko").onmouseout = function () {
+    document.getElementById("kauko").style.zIndex = "auto";
+    document.getElementById("kaukovideo").style.display = "none";
+    document.getElementById("kaukovideo2").style.display = "none";
+
+  };
   //creativecomputational
   document.getElementById("cCom").onmouseover = function () {
     document.getElementById("cCom").style.zIndex = "9999";
