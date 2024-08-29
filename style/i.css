@@ -69,21 +69,20 @@ a[href*="http"] {
 }
 
 /*数盒子*/
-a:not([info]),
+/* a:not([info]),
 .box[data-type]
  {
   counter-increment: boxes;
-}
+} */
 
 h1 {
   counter-increment: myCounter;
   font-weight: lighter;
   font-size: 1rem
-    /* 16/16 */;
 
 }
 
-a:not([info])::after,
+/* a:not([info])::after,
   .box[data-type]::after  {
   content: " [ " counter(boxes) " ] ";
   font-size: 0.8em;
@@ -91,7 +90,7 @@ a:not([info])::after,
   padding: 0.4em 0;
   top:0;
   right:15px;
-}
+} */
 
 /* box里的内容 */
 p {
